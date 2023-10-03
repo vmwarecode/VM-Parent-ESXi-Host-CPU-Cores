@@ -1,0 +1,12 @@
+{"6923079e-7597-4a13-bc21-c25c6921a5ed": {
+   "resourceKinds": [{
+      "resourceKindKey": "VirtualMachine",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1664371244530,
+   "name": "VM Parent ESXi Host CPU Cores",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=HostSystem, attribute=hardware|cpuInfo|numCpuCores, depth=-1})",
+   "description": "",
+   "unitId": "",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
